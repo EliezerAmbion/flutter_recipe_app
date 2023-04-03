@@ -1,10 +1,12 @@
 # Recipe App
 
-This is a recipe app built using the Model-View-Controller (MVC) architecture.
+- I have decided to go with the suggested project which is a recipe app.
+
+This is a recipe app was built using the Model-View-Controller (MVC) architecture.
 As a developer, I am currently in the process of learning this architecture, and this app was built as part of that learning process.
 
 To speed up the development process, I decided to use a static backend (API) that I downloaded from Google.
-This allowed me to focus on building the application and futher learning of architectures.
+This allowed me to focus on building the application and to futher learn architectures.
 
 ### Functionality
 
