@@ -10,3 +10,5 @@ This allowed me to focus on building the application and learning the MVC archit
 
 The Recipe App allows users to browse through a list of recipes and view the details of a selected recipe.
 This App also includes the steps on how to cook the given recipe and view its ingredients.
+
+Users can also add a recipe to their favorite list for future reference.

@@ -16,8 +16,8 @@ AppBarTheme appBarTheme() {
     iconTheme: IconThemeData(color: Colors.black),
     centerTitle: true,
     backgroundColor: Colors.transparent,
-    elevation: 0,
     foregroundColor: Colors.black,
+    elevation: 0,
   );
 }
 
