@@ -4,10 +4,10 @@ import 'config/theme.dart';
 import 'dummy_data.dart';
 import 'models/meal.dart';
 
-// import 'screens/filters_screen.dart';
-// import 'screens/meal_detail_screen.dart';
-// import 'screens/category_meals_screen.dart';
-// import 'screens/tabs_screen.dart';
+import 'views/filters_view.dart';
+import 'views/meal_detail_view.dart';
+import 'views/category_meals_view.dart';
+import 'views/tabs_view.dart';
 
 void main() => runApp(MyApp());
 
@@ -77,23 +77,22 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'DeliMeals',
       theme: theme(),
-
-      // routes: {
-      //   '/': (ctx) => TabsScreen(
-      //         favoriteMeals: _favoriteMeals,
-      //       ),
-      //   CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(
-      //         availableMeals: _availableMeals,
-      //       ),
-      //   MealDetailScreen.routeName: (ctx) => MealDetailScreen(
-      //         toggleFavorite: _toggleFavorite,
-      //         isMealFavorite: _isMealFavorite,
-      //       ),
-      //   FiltersScreen.routeName: (ctx) => FiltersScreen(
-      //         saveFilters: _setFilters,
-      //         currentFilters: _filters,
-      //       ),
-      // },
+      routes: {
+        '/': (ctx) => TabsView(
+              favoriteMeals: _favoriteMeals,
+            ),
+        CategoryMealsView.routeName: (ctx) => CategoryMealsView(
+              availableMeals: _availableMeals,
+            ),
+        MealDetailView.routeName: (ctx) => MealDetailView(
+              toggleFavorite: _toggleFavorite,
+              isMealFavorite: _isMealFavorite,
+            ),
+        FiltersView.routeName: (ctx) => FiltersView(
+              saveFilters: _setFilters,
+              currentFilters: _filters,
+            ),
+      },
     );
   }
 }
