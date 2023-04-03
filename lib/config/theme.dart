@@ -15,9 +15,9 @@ AppBarTheme appBarTheme() {
   return const AppBarTheme(
     iconTheme: IconThemeData(color: Colors.black),
     centerTitle: true,
-    // backgroundColor: Colors.transparent,
-    backgroundColor: Colors.grey,
+    backgroundColor: Colors.transparent,
     elevation: 0,
+    foregroundColor: Colors.black,
   );
 }
 

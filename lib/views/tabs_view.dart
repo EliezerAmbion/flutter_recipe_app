@@ -28,7 +28,7 @@ class _TabsViewState extends State<TabsView> {
   void initState() {
     _pages = [
       {
-        'page': CategoriesView(),
+        'page': const CategoriesView(),
         'title': 'Categories',
       },
       {
@@ -51,7 +51,7 @@ class _TabsViewState extends State<TabsView> {
       appBar: AppBar(
         title: Text(_pages[_selectedPageIndex]['title']),
       ),
-      drawer: const MainDrawer(), // Drawer
+      drawer: const MainDrawer(),
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavBar(
         selectPage: _selectPage,

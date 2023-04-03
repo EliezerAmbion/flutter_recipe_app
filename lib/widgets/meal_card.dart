@@ -95,10 +95,9 @@ class MealCard extends StatelessWidget {
                     ),
                     child: Text(
                       title,
-                      style: const TextStyle(
-                        fontSize: 26,
-                        color: Colors.white,
-                      ),
+                      style: Theme.of(context).textTheme.headline3!.copyWith(
+                            color: Theme.of(context).colorScheme.tertiary,
+                          ),
                       softWrap: true,
                       overflow: TextOverflow.fade,
                     ),
@@ -107,7 +106,10 @@ class MealCard extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.symmetric(
+                vertical: 10,
+                horizontal: 15,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -128,7 +130,6 @@ class MealCard extends StatelessWidget {
                   Row(
                     children: [
                       const Icon(Icons.attach_money),
-                      const SizedBox(width: 1),
                       Text(affordabilityText),
                     ],
                   )

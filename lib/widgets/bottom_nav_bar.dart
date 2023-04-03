@@ -15,8 +15,8 @@ class BottomNavBar extends StatelessWidget {
     return BottomNavigationBar(
       onTap: selectPage,
       backgroundColor: Theme.of(context).colorScheme.primary,
-      unselectedItemColor: Colors.white,
-      selectedItemColor: Theme.of(context).colorScheme.tertiary,
+      unselectedItemColor: Theme.of(context).colorScheme.tertiary,
+      selectedItemColor: Theme.of(context).colorScheme.secondary,
       // currentIndex is to tell the bottomNavbar what to highlight
       currentIndex: selectedPageIndex,
       items: const [

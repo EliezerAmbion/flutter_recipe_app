@@ -1,16 +1,12 @@
-# flutter_recipe_app
+# Recipe App
 
-A new Flutter project.
+This is a recipe app built using the Model-View-Controller (MVC) architecture.
+As a developer, I am currently in the process of learning this architecture, and this app was built as part of that learning process.
 
-## Getting Started
+To speed up the development process, I decided to use a static backend (API) that I downloaded from Google.
+This allowed me to focus on building the application and learning the MVC architecture.
 
-This project is a starting point for a Flutter application.
+### Functionality
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The Recipe App allows users to browse through a list of recipes and view the details of a selected recipe.
+This App also includes the steps on how to cook the given recipe and view its ingredients.

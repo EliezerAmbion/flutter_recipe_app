@@ -19,7 +19,7 @@ class CategoriesView extends StatelessWidget {
       ),
       children: DUMMY_CATEGORIES
           .map(
-            (catData) => CategoryItem(
+            (catData) => CategoryCard(
               id: catData.id,
               title: catData.title,
               color: catData.color,

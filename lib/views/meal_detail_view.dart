@@ -21,7 +21,7 @@ class MealDetailView extends StatelessWidget {
         margin: const EdgeInsets.only(top: 35, bottom: 5),
         child: Text(
           text,
-          style: Theme.of(context).textTheme.titleLarge,
+          style: Theme.of(context).textTheme.headline4,
         ),
       ),
     );
@@ -39,7 +39,7 @@ class MealDetailView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Image.network(
@@ -53,23 +53,28 @@ class MealDetailView extends StatelessWidget {
               ),
               child: Column(
                 children: [
+                  // Ingredients
                   buildSectionTitle(context, 'Ingredients'),
                   ListView.builder(
                     scrollDirection: Axis.vertical,
                     shrinkWrap: true,
                     itemBuilder: (context, index) => Card(
-                      color: Theme.of(context).colorScheme.secondary,
+                      color: Theme.of(context).colorScheme.tertiary,
+                      elevation: 3,
                       child: Padding(
                           padding: const EdgeInsets.symmetric(
-                            vertical: 5,
-                            horizontal: 10,
+                            vertical: 10,
+                            horizontal: 20,
                           ),
                           child: Text(
                             selectedMeal.ingredients[index],
+                            style: Theme.of(context).textTheme.bodyText2,
                           )),
                     ),
                     itemCount: selectedMeal.ingredients.length,
                   ),
+
+                  // Steps
                   buildSectionTitle(context, 'Steps'),
                   ListView.builder(
                     scrollDirection: Axis.vertical,
@@ -78,10 +83,20 @@ class MealDetailView extends StatelessWidget {
                       children: [
                         ListTile(
                           leading: CircleAvatar(
-                            child: Text('# ${(index + 1)}'),
+                            child: Text(
+                              '${(index + 1)}',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyText2!
+                                  .copyWith(
+                                    color:
+                                        Theme.of(context).colorScheme.tertiary,
+                                  ),
+                            ),
                           ),
                           title: Text(
                             selectedMeal.steps[index],
+                            style: Theme.of(context).textTheme.bodyText1,
                           ),
                         ),
                         Divider(color: Theme.of(context).colorScheme.primary),

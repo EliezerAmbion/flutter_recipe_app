@@ -70,7 +70,7 @@ class _FiltersViewState extends State<FiltersView> {
           )
         ],
       ),
-      drawer: const MainDrawer(), // Drawer
+      drawer: const MainDrawer(),
       body: Column(
         children: [
           Container(
@@ -78,7 +78,7 @@ class _FiltersViewState extends State<FiltersView> {
                 const EdgeInsets.only(top: 20, bottom: 30, left: 20, right: 20),
             child: Text(
               'Adjust your meal selection',
-              style: Theme.of(context).textTheme.titleLarge,
+              style: Theme.of(context).textTheme.headline5,
             ),
           ),
           Expanded(

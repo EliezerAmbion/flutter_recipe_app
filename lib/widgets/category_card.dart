@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../views/category_meals_view.dart';
 
-class CategoryItem extends StatelessWidget {
+class CategoryCard extends StatelessWidget {
   final String id;
   final String title;
   final Color color;
 
-  const CategoryItem({
+  const CategoryCard({
     super.key,
     required this.id,
     required this.title,
@@ -29,8 +29,7 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () => selectCategory(context),
-      splashColor: Theme.of(context).primaryColor,
-      borderRadius: BorderRadius.circular(15),
+      splashColor: Theme.of(context).colorScheme.primary,
       child: Container(
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
@@ -42,11 +41,11 @@ class CategoryItem extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(10),
         ),
         child: Text(
           title,
-          style: Theme.of(context).textTheme.titleMedium,
+          style: Theme.of(context).textTheme.headline5,
         ),
       ),
     );
