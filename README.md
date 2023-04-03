@@ -16,5 +16,6 @@ Users can also add a recipe to their favorite list for future reference.
 ### Steps to Run
 
 1. clone this repo
-2. run flutter pub get
-3. run the emulator
+2. cd to the cloned repo
+3. run flutter pub get
+4. run the emulator
