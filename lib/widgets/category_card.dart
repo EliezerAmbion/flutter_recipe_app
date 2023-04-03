@@ -15,7 +15,6 @@ class CategoryCard extends StatelessWidget {
   });
 
   void selectCategory(BuildContext ctx) {
-    // arguments will be pass around as arguments
     Navigator.of(ctx).pushNamed(
       CategoryMealsView.routeName,
       arguments: {

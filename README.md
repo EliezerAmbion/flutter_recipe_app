@@ -4,7 +4,7 @@ This is a recipe app built using the Model-View-Controller (MVC) architecture.
 As a developer, I am currently in the process of learning this architecture, and this app was built as part of that learning process.
 
 To speed up the development process, I decided to use a static backend (API) that I downloaded from Google.
-This allowed me to focus on building the application and learning the MVC architecture.
+This allowed me to focus on building the application and learning the MVC architecture (Still Learning).
 
 ### Functionality
 

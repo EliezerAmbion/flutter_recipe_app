@@ -13,9 +13,9 @@ class CategoriesView extends StatelessWidget {
       padding: const EdgeInsets.all(25),
       gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
         maxCrossAxisExtent: 200,
-        childAspectRatio: 3 / 2,
-        crossAxisSpacing: 20,
-        mainAxisSpacing: 20,
+        childAspectRatio: 2 / 1,
+        crossAxisSpacing: 15,
+        mainAxisSpacing: 15,
       ),
       children: DUMMY_CATEGORIES
           .map(
